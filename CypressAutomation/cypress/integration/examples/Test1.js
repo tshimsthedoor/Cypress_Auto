@@ -27,8 +27,9 @@ describe("Testing web", () => {
       .find(".product")
       .eq(3)
       .contains("ADD TO CART")
-      .click().then(() => {
-        console.log('sf');
+      .click()
+      .then(() => {
+        console.log("sf");
       });
 
     cy.get("@productLocator")
